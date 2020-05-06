@@ -32,6 +32,8 @@ a:hover {
   color: #e63946;
 }
 
+
+
 .container {
     width: 700px;
     margin: 40px auto;
@@ -51,6 +53,13 @@ a:hover {
   color: white;
   border-radius: 4px;
   padding: 5px 20px;
+}
+
+.btn-red:hover {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: -1s;
+  animation-iteration-count: infinite;
 }
 
 .img-circle {
@@ -97,4 +106,12 @@ a:hover {
   .container {
     width: 300px;
   }
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
